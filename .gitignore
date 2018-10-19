@@ -1,0 +1,21 @@
+.DS_Store
+vue-vuex-ts-app/node_modules
+vue-vuex-ts-app/dist
+
+# local env files
+vue-vuex-ts-app/.env.local
+vue-vuex-ts-app/.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
