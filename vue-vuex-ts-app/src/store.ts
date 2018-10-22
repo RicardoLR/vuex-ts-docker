@@ -7,11 +7,12 @@ import { RootState } from "@/store/types";
 
 import {todoModule} from "@/store/modules/todo";
 import {authModule} from "@/store/modules/auth";
+import {carrosModule} from "@/store/modules/carros";
 
 Vue.use(Vuex);
 
 /**
- * Similar a combineReducers en modulos
+ * Similar "modules" a combineReducers en modulos
  */
 const store: StoreOptions<RootState> = {
   state: {
@@ -21,6 +22,7 @@ const store: StoreOptions<RootState> = {
   modules: {
       todoModule,
       authModule,
+      carrosModule,
   },
   plugins: [vuexLocal.plugin]
 };

@@ -2,6 +2,10 @@ import Vue from 'vue';
 import '@/plugins/axios'; // instancia de mi plugin de vue-axios 
 import '@/plugins/bootstrap-vue';
 import '@/plugins/vee-validate';
+
+/**
+ * Componente principal 
+ */
 import App from './App.vue';
 import router from './router';
 import store from './store';

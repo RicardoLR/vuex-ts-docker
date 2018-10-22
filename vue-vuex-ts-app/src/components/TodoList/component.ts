@@ -12,10 +12,14 @@ const namespace: string = 'todoModule';
 })
 export default class TodoList extends Vue {
     
+    /**
+     * Props pasados a hijo como <hijo :valor=getterOrState
+     */
     @Prop({
         type: Array,
         required: true,
     }) todos!: Todo[];
+    
     @Action('updateTodoStatus', {namespace}) updateTodoStatus!: Function;
     @Action('deleteTodo', {namespace}) deleteTodo!: Function;
 

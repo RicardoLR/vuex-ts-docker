@@ -14,6 +14,9 @@ export const actions: TodoActionTree = {
         try {
             const response: AxiosResponse = await Vue.axios({
                 url: '/todos'
+                // ,headers: {
+                //     'Authorization': 'Bearer '+localStorage.getItem('userToken')
+                // }
             });
             const payload: Todo[] = response && response.data;
             context.commit('todosLoaded', payload);

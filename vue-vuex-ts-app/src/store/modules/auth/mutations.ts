@@ -4,6 +4,8 @@ import {AuthState, User} from '@/store/modules/auth/types';
 type AuthMutationTree = MutationTree<AuthState>;
 
 export const mutations: AuthMutationTree = {
+
+    /** como redux teniendo mi estado inicial state: AuthState seguido del payload de cambio */
     setUser (state: AuthState, user: User) {
         state.user = user;
         state.isLogged = true;

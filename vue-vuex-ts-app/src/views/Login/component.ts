@@ -15,7 +15,10 @@ Component.registerHooks([
     mixins: [Template]
 })
 export default class Login extends Vue {
+
+    // Partial algunos valores del Objeto pueden venir vacios
     public user: Partial<User> = {};
+    
     @State('isLogged', {namespace}) isLogged !: boolean;
     @State('error', {namespace}) error !: boolean;
     @State('errorMessage', {namespace}) errorMessage !: string;

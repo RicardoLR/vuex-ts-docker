@@ -8,7 +8,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home/:id?',
       name: 'todos',
       component: () => import(/* webpackChunkName: "todos" */ './views/TodoApp/component'),
     },
@@ -22,5 +22,11 @@ export default new Router({
         name: 'secret',
         component: () => import(/* webpackChunkName: "secret" */ './views/Secret/component'),
     },
+    {
+      path: '/todos/:id?',
+      name: 'todos',
+      component: () => import(/* webpackChunkName: "todos" */ './views/TodoApp/component'),
+    },
+
   ],
 });
