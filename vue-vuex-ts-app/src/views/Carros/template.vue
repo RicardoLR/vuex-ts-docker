@@ -22,6 +22,13 @@
                 Unir objetos en consola
             </b-button>
          </div>
+        
+        <!-- Evento pasado a hijo, v-on:nombreDehijo = eventoPadre como en React-->
+        <carros-child
+            :carroForm="carroForm"
+            v-on:updatePropsInParend="updatePropsInParend" />
+        
+
     </div>
 </template>
 

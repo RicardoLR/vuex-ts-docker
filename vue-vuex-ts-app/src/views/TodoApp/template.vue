@@ -28,12 +28,10 @@
                 </b-col>
             </b-row>
 
-            
             <h2> Obtener parametro puesto en router {{ $route.params.id }}</h2>
-
             <Carros />
-
         </div>
+
         <div v-else class="alert alert-danger text-center">
             Error cargando los todos
             <p>{{ errorMessage }}</p>

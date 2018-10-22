@@ -15,7 +15,6 @@
         <h1 class="text-center text-muted">Vue Vuex TS</h1>
 
         <!-- Navegacion usando router -->
-
         <router-view />
 
 
